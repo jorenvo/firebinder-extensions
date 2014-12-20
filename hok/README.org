@@ -1,0 +1,45 @@
+* HoK
+This is a port of HoK for Firebinder. HoK was originally written by
+Masafumi Oyamada for KeySnail.
+** Installation
+Download firebinder_hok.js and put in in your configuration directory.
+** Bindings
+firebinder_hok.js provides its own default keybindings. If you wish to
+change these have to modify the source file (keybinding code can be
+found at the end of it).
+|-----------------+---------+--------------------------------------------------------------------------------|
+| Function        | Binding | Description                                                                    |
+|-----------------+---------+--------------------------------------------------------------------------------|
+| startForeground | C-h     | Open selected hint in current tab.                                             |
+| startBackground | C-u C-h | Open selected hint in a new tab in the background.                             |
+| yankForeground  | C-c h y | Copy the selected link to the clipboard.                                       |
+| startContinuous | C-c h c | Keep displaying hints and opening them in the background until the user exits. |
+| extendedHok     | C-c h e | [[#extended_hok][See below]]                                                                      |
+|-----------------+---------+--------------------------------------------------------------------------------|
+*** Extended HoK
+:PROPERTIES:
+:CUSTOM_ID: extended_hok
+:END:
+Just like in KeySnail extended HoK is an interactive function. The
+following functions are available to type into the minibuffer.
+|-----+--------------------------------------------------|
+| Key | Function                                         |
+|-----+--------------------------------------------------|
+| ;   | Focus hint                                       |
+| s   | Save hint                                        |
+| a   | Save hint with prompt                            |
+| f   | Focus frame                                      |
+| o   | Follow hint                                      |
+| t   | Follow hint in a new tab                         |
+| b   | Follow hint in a background tab                  |
+| w   | Follow hint in a new window                      |
+| F   | Open multiple hints in tabs                      |
+| v   | View hint source                                 |
+| y   | Yank hint location                               |
+| c   | Open context menu                                |
+| i   | Show image                                       |
+| I   | Show image in a new tab                          |
+|-----+--------------------------------------------------|
+** Exiting
+Exiting HoK (eg. after startContinuous) can be done with C-g, just
+like exiting any other interactive function in Firebinder.
