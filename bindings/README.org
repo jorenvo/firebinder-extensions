@@ -1,0 +1,29 @@
+* Bindings
+Some sensible bindings for Firebinder. Recommended to use these as a
+starting point.
+** Installation
+Download bindings.js and put in in your configuration directory.
+** Bindings
+The bindings in here demonstrate how the binding system works. It
+shows how to define regular bindings as well as key chords. The
+firebinder.KeyboardShortcut function takes a combination of keys and a
+function reference that will be executed when the keybinding is
+pressed by the user.
+
+Most bindings in here use predefined commands by Firebinder
+(eg. firebinder.commands.pageDown). The available commands can be
+found [[https://github.com/jorenvo/firebinder/blob/master/extension/chrome/content/commands.js][in the commands.js file of Firebinder]]. You are ofcourse not
+required to use these. Any JavaScript function reference will work. So
+something like
+
+#+BEGIN_SRC javascript
+firebinder.KeyboardShortcut(["C-c a u"], function () {
+   alert("Hello World!");
+}),
+#+END_SRC
+
+will work just fine and is recommended over modifying the code of
+Firebinder itself.
+
+If you are planning on using ido.js it is important to get rid of both
+the C-x b and the C-x k binding because ido.js defines those itself.
