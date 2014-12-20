@@ -1,0 +1,13 @@
+* Ido
+This is a Firebinder extension based on ido-mode written by Kim
+F. Storm for GNU Emacs.
+** Installation
+Download ido.js and put in in your configuration directory.
+** Bindings
+By default ido.js binds switching of tabs to C-x b and killing of
+buffers to C-x k.
+** Features
+- Substring matching (instead of the default prefix matching)
+- Default selections that can be immediately chosen with <return>
+- Selecting next and previous matches with C-s and C-r respectively
+- Restricting to current matches with C-SPC

@@ -14,12 +14,9 @@ found at the end of it).
 | startBackground | C-u C-h | Open selected hint in a new tab in the background.                             |
 | yankForeground  | C-c h y | Copy the selected link to the clipboard.                                       |
 | startContinuous | C-c h c | Keep displaying hints and opening them in the background until the user exits. |
-| extendedHok     | C-c h e | [[#extended_hok][See below]]                                                                      |
+| extendedHok     | C-c h e | See below                                                                      |
 |-----------------+---------+--------------------------------------------------------------------------------|
 *** Extended HoK
-:PROPERTIES:
-:CUSTOM_ID: extended_hok
-:END:
 Just like in KeySnail extended HoK is an interactive function. The
 following functions are available to type into the minibuffer.
 |-----+--------------------------------------------------|
