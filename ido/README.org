@@ -5,7 +5,7 @@ F. Storm for GNU Emacs.
 Download ido.js and put in in your configuration directory.
 ** Bindings
 By default ido.js binds switching of tabs to C-x b and killing of
-buffers to C-x k.
+tabs to C-x k.
 ** Features
 - Substring matching (instead of the default prefix matching)
 - Default selections that can be immediately chosen with <return>
