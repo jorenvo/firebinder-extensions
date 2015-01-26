@@ -41,6 +41,7 @@
 	firebinder.KeyboardShortcut(["C-a"], firebinder.commands.beginningOfLine),
 	firebinder.KeyboardShortcut(["C-e"], firebinder.commands.endOfLine),
 	firebinder.KeyboardShortcut(["C-K"], firebinder.commands.undoCloseTab),
+	firebinder.KeyboardShortcut(["C-k"], firebinder.commands.killLine),
 
 	firebinder.KeyboardShortcut(["C-x", "b"], function () {
 	    firebinder.commands.switchTabInteractive.execute();
