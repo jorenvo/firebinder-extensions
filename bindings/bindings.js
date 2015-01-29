@@ -32,7 +32,8 @@
 	firebinder.KeyboardShortcut(["M-f"], firebinder.commands.wordNext),
 	firebinder.KeyboardShortcut(["M-w"], firebinder.commands.copy),
 	firebinder.KeyboardShortcut(["C-w"], firebinder.commands.cut),
-	firebinder.KeyboardShortcut(["C-y"], firebinder.commands.paste),
+	firebinder.KeyboardShortcut(["C-y"], firebinder.commands.yank),
+	firebinder.KeyboardShortcut(["M-y"], firebinder.commands.yankPop),
 	firebinder.KeyboardShortcut(["'", ",", "."], firebinder.commands.goBack),
 	firebinder.KeyboardShortcut([",", ".", "p"], firebinder.commands.goForward),
 	firebinder.KeyboardShortcut(["C-s"], firebinder.commands.findForward),
@@ -42,6 +43,7 @@
 	firebinder.KeyboardShortcut(["C-e"], firebinder.commands.endOfLine),
 	firebinder.KeyboardShortcut(["C-K"], firebinder.commands.undoCloseTab),
 	firebinder.KeyboardShortcut(["C-k"], firebinder.commands.killLine),
+	firebinder.KeyboardShortcut(["C- "], firebinder.commands.setMark),
 
 	firebinder.KeyboardShortcut(["C-x", "b"], function () {
 	    firebinder.commands.switchTabInteractive.execute();
