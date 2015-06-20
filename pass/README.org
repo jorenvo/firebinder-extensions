@@ -1,0 +1,31 @@
+* pass
+This integrates [[http://nsd.dyndns.org/pwsafe/][pwsafe]] into Firebinder.
+** Installation
+Download pass.js and put in in your configuration directory.
+** Usage
+*** Retrieving login info
+Make sure the username field on whatever website you want to log in to
+is focused. When executing =pwSafeOnCurrentDomainInteractive=
+Firebinder will prompt for the pwsafe database master password. The
+password is then given to pwsafe. When the password is correct,
+pass.js will automatically paste the username, press =<TAB>= and paste
+the password.
+*** Adding login info
+There is no interface to add entries to the pwsafe database. However,
+it is important to note that pass.js automatically looks for domains
+in the 'website' group of the database. So when adding entries, make
+sure to add them to that group (or modify the pass.js code).
+
+In order to help with creating entries, pass.js also defines
+=copyCurrentPwSafeDomainInteractive=. This function will copy the
+current domain pass.js detects to the clipboard (so you don't have to
+worry about whether to add either secure.website.com or website.com,
+etc.).
+** Bindings
+Pass comes with some default bindings that you can easily change.
+|------------------------------------+---------+----------------------------------------------------------------------------------------------------------|
+| Function                           | Binding | Description                                                                                              |
+|------------------------------------+---------+----------------------------------------------------------------------------------------------------------|
+| pwSafeOnCurrentDomainInteractive   | C-c C-p | Prompts for pwsafe password, looks up current domain, pastes username, presses =<TAB>=, pastes password. |
+| copyCurrentPwSafeDomainInteractive | C-c C-P | Copies the detected domain to the clipboard.                                                             |
+|------------------------------------+---------+----------------------------------------------------------------------------------------------------------|
