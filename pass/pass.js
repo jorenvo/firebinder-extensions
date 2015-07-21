@@ -82,10 +82,10 @@
                         firebinder.utils.dispatchKeyCode(9, false, false); // press tab
                         setTimeout(function() {
                             goDoCommand("cmd_paste");
-                        }, 50);
-                    }, 50);
+                        }, 200);
+                    }, 200);
                 }
-            }, 50);
+            }, 200);
         });
 
         firebinder.minibuffer.setInputType("password");
